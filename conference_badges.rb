@@ -1,25 +1,30 @@
+
 # Write your code here.
-array= ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-badge_maker(name)
-  "Hello, my name is #{name}"
+
+attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+
+def badge_maker(name)
+  "Hello, my name is #{name}."
 end
-batch_badge_creator(array)
-  array.map do |nombre|
-    "Hello, my name is #{nombre}"
-  end
-assign_rooms(array)
-  rooms=[1,2,3,4,5,6,7]
-  rooms=rooms.shuffle
-  i=0
-  array.each do |nombre|
-    room=rooms[i]
-    "Hello, #{nombre}! You'll be assigned to room #{room}"
-    i+=1
+
+def batch_badge_creator(attendees)
+  attendees.map do |attendee|
+    "Hello, my name is #{attendee}."
   end
 end
 
-def printer
-  batch_badge_creator(array)
-  assign_rooms(array)
+def assign_rooms(attendees)
+  attendees.each_with_index.map do |attendee, index|
+    "Hello, #{attendee}! You'll be assigned to room #{index+1}!"
+  end
 end
-  
+
+def printer(attendees)
+  batch_badge_creator(attendees).each do |badge|
+    puts badge
+  end
+
+  assign_rooms(attendees).each do |assignment|
+    puts assignment
+  end
+end
