@@ -4,7 +4,7 @@ badge_maker(name)
   "Hello, my name is #{name}"
 end
 batch_badge_creator(array)
-  array.each do |nombre|
+  array.map do |nombre|
     "Hello, my name is #{nombre}"
   end
 assign_rooms(array)
