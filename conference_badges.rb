@@ -1,6 +1,6 @@
 # Write your code here.
 badge_maker(name)
-  return "Hello, my name is #{name}"
+  "Hello, my name is #{name}"
 end
 batch_badge_creator(array)
   array.each do |nombre|
