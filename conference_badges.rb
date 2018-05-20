@@ -16,7 +16,7 @@ end
 def assign_rooms(array)
   i=1
   array.map do |nombre|
-    "Hello, #{nombre}! You'll be assigned to room #{i}!"
+    "Hello, #{nombre}! You'll be assigned to room #{i.to_s}!"
     i+=1
   end
 end
