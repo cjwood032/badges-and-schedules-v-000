@@ -1,5 +1,5 @@
 # Write your code here.
-array== ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+array= ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 badge_maker(name)
   "Hello, my name is #{name}"
 end
